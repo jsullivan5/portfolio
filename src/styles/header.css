@@ -1,4 +1,7 @@
 header {
+  position: relative;
+  top: -80px;
+  left: 0;
   background-color: #000;
   display: flex;
   justify-content: space-around;
@@ -13,13 +16,19 @@ a {
 }
 
 .visible {
-  animation: show 1s linear;
+  top: 0;
+  animation: slide-down 0.4s;
 }
-
 .hidden {
+  animation: slide-up 0.4s;
 }
 
-@@keyframes show {
-  from { transition: 0; }
-  to { transition: 50px; }
+@keyframes slide-down {
+  from { transform: translateY(-100%); }
+  to   { transform: translateY(0%);    }
+}
+
+@keyframes slide-up {
+  from { transform: translateY(0%);   }
+  to   { transform: translateY(100%); }
 }
