@@ -10,17 +10,20 @@ class App extends Component {
     this.state = {
       menu: false,
     };
+    this.handleMenuClick = this.handleMenuClick.bind(this);
   }
 
-  onCLick() {
+  handleMenuClick() {
     this.setState({ menu: !this.state.menu });
   }
 
   render() {
+    const { menu } = this.state;
+
     return (
       <main className="App">
-        <MenuButton />
-        <Header />
+        <MenuButton handleMenuClick={this.handleMenuClick} />
+        <Header menu={menu} />
         <Hello />
         <nav className="nav">
           <h1>Hello!</h1>
