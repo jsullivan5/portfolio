@@ -1,8 +1,18 @@
 .hello-wrapper {
-  background-color: white;
+  width: 450px;
+  margin: 30px auto 0;
+  padding: 20px;
+  border-radius: 15px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hello {
   color: #64E3CC;
-  font-size: 72px;
+  font-size: 200px;
+  margin: 0;
+  text-shadow: 3px 3px 5px #8491AF;
+  /*#8491AF;*/
 }
