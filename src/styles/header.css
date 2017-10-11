@@ -1,0 +1,34 @@
+header {
+  position: relative;
+  top: -80px;
+  left: 0;
+  background-color: #000;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px 30px;
+  height: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #64E3CC;
+}
+
+.visible {
+  top: 0;
+  animation: slide-down 0.4s;
+}
+.hidden {
+  animation: slide-up 0.4s;
+}
+
+@keyframes slide-down {
+  from { transform: translateY(-100%); }
+  to   { transform: translateY(0%);    }
+}
+
+@keyframes slide-up {
+  from { transform: translateY(0%);   }
+  to   { transform: translateY(100%); }
+}
