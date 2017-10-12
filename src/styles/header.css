@@ -1,5 +1,7 @@
 header {
-  position: relative;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
   top: -80px;
   left: 0;
   background-color: #000;
