@@ -11,3 +11,6 @@
   width: 32px;
   margin: 0 10px;
 }
+
+.icon-pop { transition: all .2s ease-in-out; }
+.icon-pop:hover { transform: scale(1.1); }
