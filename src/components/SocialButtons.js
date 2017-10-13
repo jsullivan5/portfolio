@@ -2,9 +2,15 @@ import React from 'react';
 
 const SocialButtons = () => (
   <div>
-    <img src="" alt="Github link" />
-    <img src="" alt="LinkedIn link" />
-    <img src="" alt="Resume link" />
+    <a href="https://github.com/jsullivan5" className="github-link">
+      <img src="./assets/github.png" alt="Github link" />
+    </a>
+    <a href="https://www.linkedin.com/in/james-f-sullivan/" className="linkedin-link">
+      <img src="./assets/linkedin.png" alt="LinkedIn link" />
+    </a>
+    <a href="https://www.linkedin.com/in/james-f-sullivan/" className="resume-link">
+      <img src="./assets/resume.png" alt="Resume link" />
+    </a>
   </div>
 );
 
