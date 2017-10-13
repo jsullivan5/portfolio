@@ -1,12 +1,21 @@
+@keyframes slide-left-hello {
+  0%   { opacity: 0.0 }
+  100% { opacity: 1.0 }
+}
+
 .hello-wrapper {
   width: 450px;
-  margin: 30px auto 0;
-  padding: 20px;
+  margin: 0 auto;
+  padding: 125px 20px 20px 20px;
   border-radius: 15px;
   font-weight: bold;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  z-index: 2;
+  animation: slide-left-hello 2s linear;
+  /*animation-delay: 4s;*/
 }
 
 .hello {
@@ -15,4 +24,5 @@
   margin: 0;
   text-shadow: 3px 3px 5px #C8CFDE;
   /*#8491AF;*/
+  font-family: 'Roboto', sans-serif;
 }

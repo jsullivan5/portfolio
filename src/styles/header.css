@@ -1,5 +1,7 @@
 header {
-  position: relative;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
   top: -80px;
   left: 0;
   background-color: #000;
@@ -20,6 +22,7 @@ a {
   animation: slide-down 0.4s;
 }
 .hidden {
+  top: -80px;
   animation: slide-up 0.4s;
 }
 
@@ -29,6 +32,6 @@ a {
 }
 
 @keyframes slide-up {
-  from { transform: translateY(0%);   }
-  to   { transform: translateY(100%); }
+  from { transform: translateY(80px);}
+  to   { transform: translateY(-80px);   }
 }

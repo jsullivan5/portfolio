@@ -25,6 +25,7 @@ class App extends Component {
 
     return (
       <main className="App">
+        <div className="filter" />
         <MenuButton handleMenuClick={this.handleMenuClick} />
         <Header menu={menu} />
         {/* <Hello /> */}
@@ -32,9 +33,9 @@ class App extends Component {
           {/* <div className="triangle-right" />
           <div className="triangle-down" />
           <div className="triangle-left" /> */}
-          <div className="opacity greet-contatiner">
-            <h1>Hello!</h1>
-            <h1>I&apos;m James Sullivan</h1>
+          <div> {/* className="opacity greet-contatiner" */}
+            <h1 className="my-name">I&apos;m James <span>Sullivan</span></h1>
+            <p className="my-title">Web Developer</p>
           </div>
         </nav>
       </main>

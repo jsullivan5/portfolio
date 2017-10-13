@@ -2,5 +2,22 @@
   position: absolute;
   top: 25px;
   left: 40px;
-  z-index: 1;
+  z-index: 3;
+  animation: wiggle-slow 5s infinite alternate;
+}
+
+.menu-button:hover {
+  animation: wiggle-fast .1s infinite alternate;
+  box-shadow: 1px 1px 5px #B3B2B0;
+}
+
+@keyframes wiggle-fast {
+  0% { transform: rotate(-2deg); }
+  100% { transform: rotate(2deg); }
+}
+
+@keyframes wiggle-slow {
+  96% { transform: rotate(-2deg); }
+  98% { transform: rotate(2deg); }
+  100% { transform: rotate(-2deg); }
 }
