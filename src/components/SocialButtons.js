@@ -1,15 +1,19 @@
 import React from 'react';
+import '../styles/SocialButtons.css';
+import linkedin from './assets/linkedin.png';
+import github from './assets/github.png';
+import resume from './assets/resume.png';
 
 const SocialButtons = () => (
-  <div>
-    <a href="https://github.com/jsullivan5" className="github-link">
-      <img src="./assets/github.png" alt="Github link" />
+  <div className="social-container">
+    <a href="https://github.com/jsullivan5">
+      <img className="github-link" src={github} alt="Github link" />
     </a>
-    <a href="https://www.linkedin.com/in/james-f-sullivan/" className="linkedin-link">
-      <img src="./assets/linkedin.png" alt="LinkedIn link" />
+    <a href="https://www.linkedin.com/in/james-f-sullivan/">
+      <img className="resume-link" src={resume} alt="Resume link" />
     </a>
-    <a href="https://www.linkedin.com/in/james-f-sullivan/" className="resume-link">
-      <img src="./assets/resume.png" alt="Resume link" />
+    <a href="https://www.linkedin.com/in/james-f-sullivan/">
+      <img className="linkedin-link" src={linkedin} alt="LinkedIn link" />
     </a>
   </div>
 );

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Header from './Header';
 import Hello from './Hello';
 import MenuButton from './MenuButton';
+import SocialButtons from './SocialButtons';
 import '../styles/App.css';
 
 class App extends Component {
@@ -36,6 +37,7 @@ class App extends Component {
           <div> {/* className="opacity greet-contatiner" */}
             <h1 className="my-name">I&apos;m James <span>Sullivan</span></h1>
             <p className="my-title">Web Developer</p>
+            <SocialButtons />
           </div>
         </nav>
       </main>

@@ -1,0 +1,13 @@
+.social-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.github-link,
+.linkedin-link,
+.resume-link {
+  height: 32px;
+  width: 32px;
+  margin: 0 10px;
+}
