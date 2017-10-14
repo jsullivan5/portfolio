@@ -29,10 +29,7 @@ class App extends Component {
         <MenuButton handleMenuClick={this.handleMenuClick} />
         <Header menu={menu} />
         <nav className="nav">
-          {/* <div className="triangle-right" />
-          <div className="triangle-down" />
-          <div className="triangle-left" /> */}
-          <div> {/* className="opacity greet-contatiner" */}
+          <div>
             <h1 className="my-name">I&apos;m James <span>Sullivan</span></h1>
             <p className="my-title">Web Developer</p>
             <SocialButtons />
