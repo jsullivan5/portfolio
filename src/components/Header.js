@@ -1,19 +1,15 @@
 import React from 'react';
-import '../styles/header.css';
+import SocialButtons from './SocialButtons';
+import '../styles/Header.css';
 
-const Header = ({ menu }) => {
-  if (menu === '') {
-    return <div />;
-  }
-  return (
-    <header className={menu !== '' && menu === true ? 'visible' : 'hidden'}>
-      <div />
-      <a href="https://www.google.com">About</a>
-      <a href="https://www.google.com">Projects</a>
-      <a href="https://www.google.com">Github</a>
-      <a href="https://www.google.com">LinkedIn</a>
-    </header>
-  );
-};
+const Header = () => (
+  <header className="header">
+    <div>
+      <h1 className="my-name">I&apos;m James <span>Sullivan</span></h1>
+      <p className="my-title">Web Developer</p>
+      <SocialButtons />
+    </div>
+  </header>
+);
 
 export default Header;

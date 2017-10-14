@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import Header from './Header';
-import Hello from './Hello';
+import Nav from './Nav';
 import MenuButton from './MenuButton';
-import SocialButtons from './SocialButtons';
+import Header from './Header';
 import '../styles/App.css';
 
 class App extends Component {
@@ -28,18 +27,8 @@ class App extends Component {
       <main className="App">
         <div className="filter" />
         <MenuButton handleMenuClick={this.handleMenuClick} />
-        <Header menu={menu} />
-        {/* <Hello /> */}
-        <nav className="nav">
-          {/* <div className="triangle-right" />
-          <div className="triangle-down" />
-          <div className="triangle-left" /> */}
-          <div> {/* className="opacity greet-contatiner" */}
-            <h1 className="my-name">I&apos;m James <span>Sullivan</span></h1>
-            <p className="my-title">Web Developer</p>
-            <SocialButtons />
-          </div>
-        </nav>
+        <Nav menu={menu} />
+        <Header />
       </main>
     );
   }

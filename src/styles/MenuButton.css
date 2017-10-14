@@ -8,7 +8,6 @@
 
 .menu-button:hover {
   animation: wiggle-fast .1s infinite alternate;
-  box-shadow: 1px 1px 5px #B3B2B0;
 }
 
 @keyframes wiggle-fast {
