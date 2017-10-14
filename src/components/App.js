@@ -28,13 +28,13 @@ class App extends Component {
         <div className="filter" />
         <MenuButton handleMenuClick={this.handleMenuClick} />
         <Nav menu={menu} />
-        <nav className="nav">
+        <header className="header">
           <div>
             <h1 className="my-name">I&apos;m James <span>Sullivan</span></h1>
             <p className="my-title">Web Developer</p>
             <SocialButtons />
           </div>
-        </nav>
+        </header>
       </main>
     );
   }

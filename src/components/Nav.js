@@ -1,12 +1,12 @@
 import React from 'react';
-import '../styles/header.css';
+import '../styles/nav.css';
 
 const Nav = ({ menu }) => {
   if (menu === '') {
     return <div />;
   }
   return (
-    <header className={menu ? 'visible' : 'hidden'}>
+    <header className={`nav ${menu ? 'visible' : 'hidden'}`}>
       <div />
       <a href="https://www.google.com">About</a>
       <a href="https://www.google.com">Projects</a>
