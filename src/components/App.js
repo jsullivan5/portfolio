@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Header from './Header';
+import Nav from './Nav';
 import MenuButton from './MenuButton';
 import SocialButtons from './SocialButtons';
 import '../styles/App.css';
@@ -27,7 +27,7 @@ class App extends Component {
       <main className="App">
         <div className="filter" />
         <MenuButton handleMenuClick={this.handleMenuClick} />
-        <Header menu={menu} />
+        <Nav menu={menu} />
         <nav className="nav">
           <div>
             <h1 className="my-name">I&apos;m James <span>Sullivan</span></h1>

@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/header.css';
 
-const Header = ({ menu }) => {
+const Nav = ({ menu }) => {
   if (menu === '') {
     return <div />;
   }
@@ -16,4 +16,4 @@ const Header = ({ menu }) => {
   );
 };
 
-export default Header;
+export default Nav;
