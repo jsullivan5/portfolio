@@ -6,7 +6,7 @@ const Nav = ({ menu }) => {
     return <div />;
   }
   return (
-    <header className={menu !== '' && menu === true ? 'visible' : 'hidden'}>
+    <header className={menu ? 'visible' : 'hidden'}>
       <div />
       <a href="https://www.google.com">About</a>
       <a href="https://www.google.com">Projects</a>
