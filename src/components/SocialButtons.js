@@ -11,7 +11,6 @@ const SocialButtons = () => (
         className="github-link icon-pop"
         src={github}
         alt="Github link"
-        title="github"
       />
     </a>
     <a href="https://www.linkedin.com/in/james-f-sullivan/">
