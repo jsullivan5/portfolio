@@ -6,18 +6,6 @@
   height: 100vh;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
-@keyframes slide-right-filter {
-  from {transform: translateX(0%);}
-  to {transform: translateX(100%);}
-}
-
-/* #64E3CC */
-
 .filter {
   background-color: #000;
   width: 100%;
