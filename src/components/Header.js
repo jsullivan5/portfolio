@@ -1,6 +1,6 @@
 import React from 'react';
 import SocialButtons from './SocialButtons';
-
+import '../styles/Header.css';
 
 const Header = () => (
   <header className="header">
